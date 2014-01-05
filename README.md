@@ -1,30 +1,18 @@
-##Confluence Skin For XBMC
+###TexturePacker
 
-This is the Default skin for XBMC, with some Texture fixes and color matching.
-This fixes pixelated images, precision issues (half pixels), color matching (using Confluence Blue #0084ff, elements alignments/centering and sizing.
-This usually happens when new graphics are needed and they are added done using raster resources which are often resized and various people add new graphics with no access to psd sources.
+Instructions for use
 
-###Texture_Packer
-
-This has all the Texture Packer and all required +updated dll's
-
-###PSD_Sources
-
-Includes PSD Sources with vectors for all improvements and fixes to confluence skin.
-See https://github.com/xbmc/xbmc/pull/2517
-
-These PSD sources including image changes are GPLv2 licence compatible with XBMC licence and if you use them in your project or derivative works please let me know.
-Derivative work or source usage [click here to make a notification or submit a comment, give some feedback, etc.](https://github.com/uNiversaI/skin.confluence/issues "Title")
-
-If you modify/improve/add-to/change these PSD it would be nice if you submit a PR (pull request) back.
-
-Enjoy.
-
+1. Place any modified textures inside the media folder using the same folder layout as in the original
 ```
-   ___   ___  __         ____  
-  / _ \ / _ \/ /  __   _|___ \ 
- / /_\// /_)/ /   \ \ / / __) |
-/ /_\\/ ___/ /___  \ V / / __/ 
-\____/\/   \____/   \_/ |_____|
-
+media\background.png
+media\list\listfocus.png
 ```
+2. Change path inside TexturePacker-Build.bat to match your \media\path
+
+3. Double click the TexturePacker-Build.bat to run the TexturePacker
+
+4. TexturePacker will automatically check for any dupes and link them
+
+5. The completed textures.xbt must then be renamed the same as your colour XML
+
+6. Place the final XBT file in the skins media folder and change the theme via the Appearance settings
